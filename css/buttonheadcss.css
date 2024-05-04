@@ -1,0 +1,393 @@
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.btns {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  height: 80px;
+  margin-top: 0px;
+  width: 82%;
+  border-radius: 40px;
+  box-shadow: 0 2px 4px -1px rgba(25, 25, 25, 0.2);
+}
+.btns input {
+  display: none;
+}
+.btns label {
+  display: table;
+  float: left;
+  width: 20%;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+ 
+}
+.btns label:first-child {
+  border-left: none;
+  border-radius: 40px 0 0 40px;
+}
+.btns label:last-child {
+  border-right: none;
+  border-radius: 0 40px 40px 0;
+}
+.btns .btn {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: 
+  linear-gradient(#131313 0 0) padding-box, /*this is your grey background*/
+  linear-gradient(to bottom, #922EFF, #EA4678) border-box;
+  border: 2px solid transparent;
+  font-family: "DB Heavent";
+  font-size: 38px;
+  cursor: pointer;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: 500;
+  color: #f3f3f3;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  box-shadow: inset 0 30px 20px -20px rgba(255, 255, 255, 0.15);
+  transition: color 250ms cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 250ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+.btns .btn:hover {
+  box-shadow: inset 0 30px 30px -20px rgba(50, 50, 50, 0.02);
+  transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.btns .btn:after {
+  
+  text-align: center;
+  font-size: 20px;
+  display: inline-block;
+  transform: scale(0);
+  transition: margin 250ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 100ms, transform 250ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+.btns .first {
+  border-radius: 20px 0 0 20px;
+}
+.btns .last {
+  border-radius: 0 20px 20px 0;
+}
+
+.btns input:checked + .btn {
+  
+  color: #131313;
+  text-shadow: none;
+  background: 
+  linear-gradient(#f3f3f3 0 0) padding-box, /*this is your grey background*/
+  linear-gradient(to bottom, #922EFF, #EA4678) border-box;
+  border: 4px solid transparent;
+  box-shadow: inset 0 10px 50px rgba(25, 25, 25, 0.08);
+  transition: color 500ms cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 150ms;
+}
+.btns input:checked + .btn:after {
+  align-items: center;
+  margin-left: 12px;
+  transform: scale(1.25);
+  transition: transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 250ms, margin 500ms;
+}
+
+@media (max-width:1271px) {
+
+  .vertical-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin: 0px;
+    width: 94%;
+    border-radius: 40px;
+    box-shadow: 0 2px 4px -1px rgba(25, 25, 25, 0.2);
+  }
+  .btns input {
+    display: none;
+  }
+  .btns label {
+    display: table;
+    float: left;
+    width: 19%;
+    height: 100%;
+
+    text-align: center;
+   
+  }
+  .btns label:first-child {
+    border-left: none;
+    border-radius: 40px 0 0 40px;
+  }
+  .btns label:last-child {
+    border-right: none;
+    border-radius: 0 40px 40px 0;
+  }
+  .btns .btn {
+    padding-left: 10px;
+    padding-right: 10px;
+    background: 
+    linear-gradient(#131313 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(to bottom, #922EFF, #EA4678) border-box;
+    border: 2px solid transparent;
+    font-family: "DB Heavent";
+    font-size: 40px;
+    cursor: pointer;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 500;
+    color: #f3f3f3;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    box-shadow: inset 0 30px 20px -20px rgba(255, 255, 255, 0.15);
+    transition: color 250ms cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 250ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  }
+  .btns .btn:hover {
+    box-shadow: inset 0 30px 30px -20px rgba(50, 50, 50, 0.02);
+    transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  .btns .btn:after {
+    
+    text-align: center;
+    font-size: 20px;
+    display: inline-block;
+    transform: scale(0);
+    transition: margin 250ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 100ms, transform 250ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  }
+  .btns .first {
+    border-radius: 20px 0 0 20px;
+  }
+  .btns .last {
+    border-radius: 0 20px 20px 0;
+  }
+  
+  .btns input:checked + .btn {
+    
+    color: #131313;
+    text-shadow: none;
+    background: 
+    linear-gradient(#f3f3f3 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(to bottom, #922EFF, #EA4678) border-box;
+    border: 4px solid transparent;
+    box-shadow: inset 0 10px 50px rgba(25, 25, 25, 0.08);
+    transition: color 500ms cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 150ms;
+  }
+  .btns input:checked + .btn:after {
+    align-items: center;
+    margin-left: 12px;
+    transform: scale(1.25);
+    transition: transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 250ms, margin 500ms;
+  }
+
+  
+  
+}
+
+@media (max-width:1050px) {
+
+  .vertical-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  
+  .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin-top: 0px;
+    width: 98%;
+    border-radius: 40px;
+    box-shadow: 0 2px 4px -1px rgba(25, 25, 25, 0.2);
+  }
+  .btns input {
+    display: none;
+  }
+  .btns label {
+    display: table;
+    margin: 10px;
+    float: left;
+    width: 19%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+   
+  }
+  .btns label:first-child {
+    border-left: none;
+    border-radius: 30px 0 0 30px;
+  }
+  .btns label:last-child {
+    border-right: none;
+    border-radius: 0 30px 30px 0;
+  }
+  .btns .btn {
+    padding-left: 10px;
+    padding-right: 10px;
+    background: 
+    linear-gradient(#131313 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(to bottom, #922EFF, #EA4678) border-box;
+    border: 2px solid transparent;
+    font-family: "DB Heavent";
+    font-size: 30px;
+    cursor: pointer;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 500;
+    color: #f3f3f3;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    box-shadow: inset 0 30px 20px -20px rgba(255, 255, 255, 0.15);
+    transition: color 250ms cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 250ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  }
+  .btns .btn:hover {
+    box-shadow: inset 0 30px 30px -20px rgba(50, 50, 50, 0.02);
+    transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  .btns .btn:after {
+    
+    text-align: center;
+    font-size: 20px;
+    display: inline-block;
+    transform: scale(0);
+    transition: margin 250ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 100ms, transform 250ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  }
+  .btns .first {
+    border-radius: 20px 0 0 20px;
+  }
+  .btns .last {
+    border-radius: 0 20px 20px 0;
+  }
+  
+  .btns input:checked + .btn {
+    
+    color: #131313;
+    text-shadow: none;
+    background: 
+    linear-gradient(#f3f3f3 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(to bottom, #922EFF, #EA4678) border-box;
+    border: 4px solid transparent;
+    box-shadow: inset 0 10px 50px rgba(25, 25, 25, 0.08);
+    transition: color 500ms cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 150ms;
+  }
+  .btns input:checked + .btn:after {
+    align-items: center;
+    margin-left: 12px;
+    transform: scale(1.25);
+    transition: transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 250ms, margin 500ms;
+  }
+  
+}
+
+@media (max-width:756px) {
+
+  .vertical-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    
+  }
+
+  
+  .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+    width: 80%;
+    
+    border-radius: 40px;
+    box-shadow: 0 2px 4px -1px rgba(25, 25, 25, 0.2);
+  }
+  .btns input {
+    display: none;
+  }
+  .btns label {
+    display: table;
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    text-align: center;
+   
+  }
+  .btns label:first-child {
+    border-left: none;
+    border-radius: 40px 0 0 40px;
+  }
+  .btns label:last-child {
+    border-right: none;
+    border-radius: 0 40px 40px 0;
+  }
+  .btns .btn {
+    border-radius: 20px;
+    margin: 10px;
+    padding:10px;
+    background: 
+    linear-gradient(#131313 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(to bottom, #922EFF, #EA4678) border-box;
+    border: 2px solid transparent;
+    font-family: "DB Heavent";
+    font-size: 30px;
+    cursor: pointer;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 500;
+    color: #f3f3f3;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    box-shadow: inset 0 30px 20px -20px rgba(255, 255, 255, 0.15);
+    transition: color 250ms cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 250ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  }
+  .btns .btn:hover {
+    box-shadow: inset 0 30px 30px -20px rgba(50, 50, 50, 0.02);
+    transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  .btns .btn:after {
+    
+    
+    text-align: center;
+    font-size: 20px;
+    display: inline-block;
+    transform: scale(0);
+    transition: margin 250ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 100ms, transform 250ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  }
+  .btns .first {
+    border-radius: 20px 20px 20px 20px;
+  }
+  .btns .last {
+    border-radius: 20px 20px 20px 20px;
+  }
+  
+  .btns input:checked + .btn {
+    
+    color: #131313;
+    text-shadow: none;
+    background: 
+    linear-gradient(#f3f3f3 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(to bottom, #922EFF, #EA4678) border-box;
+    border: 4px solid transparent;
+    box-shadow: inset 0 10px 50px rgba(25, 25, 25, 0.08);
+    transition: color 500ms cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 150ms;
+  }
+  .btns input:checked + .btn:after {
+    align-items: center;
+    margin-left: 12px;
+    transform: scale(1.25);
+    transition: transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 250ms, margin 500ms;
+  }
+  
+}

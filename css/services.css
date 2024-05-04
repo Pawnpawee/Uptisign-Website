@@ -1,0 +1,225 @@
+
+/*banner1*/
+.ourservices {
+  
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgservice {
+  width: 100vw;
+  height: 280px;
+  background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(88, 12, 123));
+}
+.headourservices {
+  
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headourservices h1 {
+    color: #f3f3f3;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.btn-group2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-group2 button {
+    background: 
+    linear-gradient(#131313 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(to bottom, #922EFF, #EA4678) border-box;
+    border: 2px solid transparent;
+    color: white; /* White text */
+    padding: 5px 80px; /* Some padding */
+    font-family: "DB Heavent";
+    float: left; 
+    font-size: 40px;
+    transition: all 0.5s;
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group2:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .btn-group2 button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  .btn-group2 button:first-child {
+   border-radius: 20px 0 0 20px;
+  }
+  .btn-group2 button:last-child {
+    border-radius: 0 20px 20px 0;
+   }
+  /* Add a background color on hover */
+  .btn-group2 button:hover {
+    cursor: pointer;
+    color: #131313;
+    background: 
+    linear-gradient(#f3f3f3 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(to bottom, #922EFF, #EA4678) border-box;
+    border: 2px solid transparent;
+  }
+
+  .table {
+    margin-top: 40px;
+    background: 
+  linear-gradient(#f3f3f3 0 0) padding-box, /*this is your grey background*/
+  linear-gradient(to bottom, #922EFF, #EA4678) border-box;
+  border: 5px solid transparent;
+    width:1290px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .table img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 1000px;
+    animation: slide-in .5s ease-out forwards;
+  }
+
+
+  @keyframes slide-in {
+    0% {
+  
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@media (max-width:1300px) {
+
+
+
+.headourservices h1 {
+  color: #f3f3f3;
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.btn-group2 button {
+  padding: 5px 40px; /* Some padding */
+  font-size: 40px;
+}
+
+
+.table {
+  width:950px;
+  border-radius: 30px;
+}
+
+.table img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 800px;
+  
+}
+
+}
+
+@media (max-width:980px) {
+
+
+
+  .headourservices h1 {
+    color: #f3f3f3;
+    font-size: 80px;
+    font-weight: 700;
+  }
+  
+  .btn-group2 button {
+    padding: 5px 18px; /* Some padding */
+    font-size: 35px;
+  }
+  
+  
+  
+  .table {
+    width:700px;
+    border-radius: 30px;
+  }
+  
+  .table img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 600px;
+    
+  }
+  
+  }
+
+
+
+  @media (max-width:450px) {
+
+    .bgservice {
+      height: 200px;
+    }
+
+    .headourservices h1 {
+      color: #f3f3f3;
+      font-size: 50px;
+      font-weight: 700;
+    }
+
+    .btn-group2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    width: 300px;
+    height: 100%;
+    margin: 10px;
+    text-align: center;
+
+    }
+    
+    .btn-group2 button {
+      padding: 5px 10px; /* Some padding */
+      font-family: "DB Heavent";
+      float: left; 
+      font-size: 30px;
+      border-radius: 20px;
+      width: 100%;
+      margin: 10px;
+    }
+
+    .btn-group2 button:first-child {
+      border-radius: 20px 20px 20px 20px;
+     }
+     .btn-group2 button:last-child {
+       border-radius: 20px 20px 20px 20px;
+      }
+ 
+    
+    
+    .table {
+      width:310px;
+      border-radius: 30px;
+    }
+    
+    .table img {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      width: 280px;
+      
+    }
+    
+    }

@@ -1,0 +1,742 @@
+.containerbox {
+    
+  width:  100%;
+  font-family: "DB Heavent", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.boxboxcon1 {
+  width:  100%;
+  height: 700px;
+  font-family: "DB Heavent", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 50px 0px 50px;
+ 
+}
+
+.containerbutton {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 84%;
+  height: 100%;
+  
+}
+
+.containerbutton2 {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 84%;
+  height: 100%;
+  
+}
+
+
+.insidebutton {
+
+  margin-right: 22%;
+  
+}
+
+.insidebutton2 {
+
+  margin-right: 0;
+  
+}
+
+
+.boxcontainer1 {
+  position: relative;
+  margin: 30px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 42%;
+  height: 100%;
+  border: 1px solid #333;
+  box-shadow: 0 0 10px rgb(202, 25, 238);
+  border-radius: 30px;
+  background-color: #131313;
+  
+}
+
+.boxcontainer1::after {
+    border-radius: 30px;
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg,  #750cf2,#f20ccc, #0c9ef2);
+  z-index: -1;
+}
+.boxcontainer1::before {
+  border-radius: 30px;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #750cf2,#f20ccc, #0c9ef2);
+  z-index: -2;
+  filter: blur(40px);
+}
+
+.containerbox1 {
+  
+  width:  100%;
+  height: 700px;
+  font-family: "DB Heavent", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  padding-bottom: 0;
+    
+}
+
+.containerbox2 {
+  
+  width:  100%;
+  height: 700px;
+  font-family: "DB Heavent", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  padding-bottom: 0;
+    
+}
+
+.containerbox3 {
+  width:  100%;
+  height: 700px;
+  font-family: "DB Heavent", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  padding-bottom: 0;
+}
+
+.containerbox4 {
+  width:  100%;
+  height: 700px;
+  font-family: "DB Heavent", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  padding-bottom: 0;
+}
+
+.containerbox5 {
+  width:  100%;
+  height: 700px;
+  font-family: "DB Heavent", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  padding-bottom: 0;
+    
+}
+
+.containerbox6 {
+  width:  100%;
+  height: 700px;
+  font-family: "DB Heavent", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  padding-bottom: 0;
+   
+}
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+  video {
+    width: 100%;
+    height: 100%;
+  }
+  
+
+@media (max-width:1200px) {
+ 
+  
+  .containerbutton {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 84%;
+    height: 100%;
+    
+  }
+  
+  
+  .insidebutton {
+  
+    margin-right: 22%;
+    
+  }
+  
+  .insidebutton2 {
+  
+    margin-right: 0;
+    
+  }
+  
+  
+  .boxcontainer1 {
+    position: relative;
+    margin: 20px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 100%;
+    border: 1px solid #333;
+    box-shadow: 0 0 10px rgb(202, 25, 238);
+    border-radius: 30px;
+    background-color: #131313;
+    
+  }
+  
+  .boxcontainer1::after {
+      border-radius: 30px;
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg,  #750cf2,#f20ccc, #0c9ef2);
+    z-index: -1;
+  }
+  .boxcontainer1::before {
+    border-radius: 30px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #750cf2,#f20ccc, #0c9ef2);
+    z-index: -2;
+    filter: blur(40px);
+  }
+  
+  .containerbox1 {
+    
+    width:  100%;
+    height: 600px;
+    font-family: "DB Heavent", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    padding-bottom: 0;
+      
+  }
+  
+  .containerbox2 {
+    
+    width:  100%;
+    height: 600px;
+    font-family: "DB Heavent", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    padding-bottom: 0;
+      
+  }
+  
+  .containerbox3 {
+    width:  100%;
+    height: 600px;
+    font-family: "DB Heavent", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    padding-bottom: 0;
+  }
+  
+  .containerbox4 {
+    width:  100%;
+    height: 600px;
+    font-family: "DB Heavent", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    padding-bottom: 0;
+  }
+  
+  .containerbox5 {
+    width:  100%;
+    height: 600px;
+    font-family: "DB Heavent", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    padding-bottom: 0;
+      
+  }
+  
+  .containerbox6 {
+    width:  100%;
+    height: 600px;
+    font-family: "DB Heavent", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    padding-bottom: 0;
+     
+  }
+    
+}
+
+@media (max-width:900px) {
+ 
+  
+  .containerbutton {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 95%;
+    height: 100%;
+    
+  }
+  
+  .containerbutton2 {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 95%;
+    height: 100%;
+    
+  }
+  
+  .insidebutton {
+  
+    margin-right: 22%;
+    
+  }
+  
+  .insidebutton2 {
+  
+    margin-right: 0;
+    
+  }
+  
+  
+  .boxcontainer1 {
+    position: relative;
+    margin: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    border: 1px solid #333;
+    box-shadow: 0 0 10px rgb(202, 25, 238);
+    border-radius: 30px;
+    background-color: #131313;
+    
+  }
+  
+  .boxcontainer1::after {
+      border-radius: 30px;
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg,  #750cf2,#f20ccc, #0c9ef2);
+    z-index: -1;
+  }
+  .boxcontainer1::before {
+    border-radius: 30px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #750cf2,#f20ccc, #0c9ef2);
+    z-index: -2;
+    filter: blur(40px);
+  }
+  
+  .containerbox1 {
+    
+    width:  100%;
+    height: 500px;
+    font-family: "DB Heavent", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 0;
+      
+  }
+  
+  .containerbox2 {
+    
+    width:  100%;
+    height: 500px;
+    font-family: "DB Heavent", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 0;
+      
+  }
+  
+  .containerbox3 {
+    width:  100%;
+    height: 500px;
+    font-family: "DB Heavent", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 0;
+  }
+  
+  .containerbox4 {
+    width:  100%;
+    height: 500px;
+    font-family: "DB Heavent", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 0;
+  }
+  
+  .containerbox5 {
+    width:  100%;
+    height: 500px;
+    font-family: "DB Heavent", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 0;
+      
+  }
+  
+  .containerbox6 {
+    width:  100%;
+    height: 500px;
+    font-family: "DB Heavent", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 0;
+     
+  }
+    
+}
+
+@media (max-width:756px) {
+ 
+  
+  .containerbutton {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 95%;
+    height: 100%;
+    
+  }
+
+  .containerbutton2 {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 95%;
+    height: 100%;
+    
+  }
+  
+  
+  .insidebutton {
+  
+    margin-right: 22%;
+    
+  }
+  
+  .insidebutton2 {
+  
+    margin-right: 0;
+    
+  }
+  
+  
+  
+  .boxcontainer1 {
+    position: relative;
+    margin: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 50%;
+    border: 1px solid #333;
+    box-shadow: 0 0 10px rgb(202, 25, 238);
+    border-radius: 30px;
+    background-color: #131313;
+    
+  }
+  
+  .boxcontainer1::after {
+      border-radius: 30px;
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg,  #750cf2,#f20ccc, #0c9ef2);
+    z-index: -1;
+  }
+  .boxcontainer1::before {
+    border-radius: 30px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #750cf2,#f20ccc, #0c9ef2);
+    z-index: -2;
+    filter: blur(40px);
+  }
+  .boxboxcon1 {
+    margin-top: 20px;
+    flex-direction: column;
+    width:  100%;
+    height: 1000px;
+    font-family: "DB Heavent", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px 0px 30px;
+   
+  }
+
+  .containerbutton {
+    display: none;
+  }
+  .containerbox1 {
+    margin-top: 30px;
+    flex-direction: column;
+    width:  100%;
+    height: 1000px;
+    font-family: "DB Heavent", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 0;
+      
+  }
+  
+  .containerbox2 {
+    margin-top: 30px;
+    flex-direction: column;
+    width:  100%;
+    height: 1000px;
+    font-family: "DB Heavent", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 0;
+      
+  }
+  
+  .containerbox3 {
+    margin-top: 30px;
+    flex-direction: column;
+    width:  100%;
+    height: 1000px;
+    font-family: "DB Heavent", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 0;
+  }
+  
+  .containerbox4 {
+    margin-top: 30px;
+    flex-direction: column;
+    width:  100%;
+    height: 1000px;
+    font-family: "DB Heavent", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 0;
+  }
+  
+  .containerbox5 {
+    margin-top: 30px;
+    flex-direction: column;
+    width:  100%;
+    height: 1000px;
+    font-family: "DB Heavent", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 0;
+      
+  }
+  
+  .containerbox6 {
+    margin-top: 30px;
+    flex-direction: column;
+    width:  100%;
+    height: 1000px;
+    font-family: "DB Heavent", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 0;
+     
+  }
+    
+}
+
+@media (min-width:2000px) {
+
+  .insidebutton {
+
+    margin-right: 33%;
+    
+  }
+  
+}
+
+@media (max-width:1200px) {
+
+  .containerbutton {
+    width: 92%;
+    height: 100%;
+    
+  }
+  .insidebutton {
+
+    margin-right: 18%;
+    
+  }
+  
+}
+
+@media (max-width:1024px) {
+  .insidebutton {
+
+    margin-right: 12%;
+    
+  }
+}
+
+@media (max-width:768px) {
+  .insidebutton {
+
+    margin-right: 4%;
+    
+  }
+}
